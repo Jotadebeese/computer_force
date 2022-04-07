@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header class="top">
+        <img alt="Company logo" class="logo" src="/Computer Force logo.jpeg">
+    </header>
+    <div class="menu">
+        <a href="home.html#home"><img alt="Company Logo" class="log2" src="https://image.jimcdn.com/app/cms/image/transf/dimension=origxorig:format=png/path/s6b62474d6def2639/image/i2cc6d6a9e1d8763b/version/1472394778/image.png"></a>
+        <a href="home.html#home"><p>Home</p></a>
+        <a href="home.html#products_cat"><p>Products</p></a>
+        <a href="home.html#about"><p>About</p></a>
+        <a href="#registration"><p>Registration</p></a>
+        <form class="getting" method="get">
+            <input type="text" placeholder="Search.." name="search" id="search">
+            <label for="search" id="search_label">Search text box</label>
+            <button text="Button to search" type="submit"><i class="fa fa-search"><p class="button_description">Button to search thru the website</p></i></button>
+        </form>
+    </div>
+    <div class='main'>
+        <h1 id="registration">Registration form</h1>
+        <p>Please complete the following form to register for an account on our website.</p>
+        <div class="form_container">
+            <form autocomplete="on">
+                <div class="inside_cont">
+                    <div class="element">
+                        <label class="labels" for="uname">Username:</label>
+                        <input required class="placeholders" type="text" id="uname" placeholder="Create a username">
+                    </div>
+                    <div class="element">
+                        <label class="labels" for="email">Email:</label>
+                        <input required class="placeholders" type="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="element">
+                        <label class="labels" for="password">Pasword:</label>
+                        <input required class="placeholders" type="password" id="password" placeholder="Create a password">
+                    </div>
+                    <div class="element">
+                        <label class="labels" for="conpassword">Confirm Pasword:</label>
+                        <input required class="placeholders" type="password" id="conpassword" placeholder="Confirm the password">
+                    </div>
+                    <div class="element">
+                        <label class="labels" for="fname">First Name:</label>
+                        <input required class="placeholders" type="text" id="fname" placeholder="First Name">
+                    </div>
+                    <div class="element">
+                        <label class="labels" for="sname">Surname:</label>
+                        <input required class="placeholders" type="text" id="sname" placeholder="Surname">
+                    </div>
+                    <div class="element">
+                        <p>Gender:</p>
+                        <div class="genders">
+                            <div>
+                                <input type="radio" id="male" name="gender" value="Male">
+                                <label required class="labels" for="male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="female" name="gender" value="Female">
+                                <label  class="labels" for="female">Female</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="other" name="gender" value="Other">
+                                <label  class="labels" for="other">Other</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="none" name="gender" value="none">
+                                <label  class="labels" for="none">Prefer Not to Answer</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <label class="labels" for="birthday">Date of Birth:</label>
+                        <input class="placeholders date" type="date" id="birthday" name="birthday">
+                    </div>
+                    <div class="element">
+                        <label class="labels" for="address">Address:</label>
+                        <input required class="placeholders" type="text" id="address" placeholder="Street number and name">
+                    </div>
+                    <div class="element address_cont"> 
+                        <label class="labels" for="suburb">Suburb:</label>
+                        <input required class="placeholders" type="text" id="suburb" placeholder="Suburb">
+                        <label class="labels" for="postcode">Postcode:</label>
+                        <input required class="placeholders" type="number" id="postcode" placeholder="Postcode">
+                        <label class="labels" for="state">State:</label>
+                        <input required class="placeholders" type="text" id="state" placeholder="State">
+                    </div>
+                    <div class="element">
+                        <label class="labels" for="phone">Phone:</label>
+                        <input class="placeholders" type="tel" id="phone" placeholder="0000-000-000" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+                    </div>
+                </div>
+                <input class="form_button" type="reset" value="Clear">
+                <input class="form_button"type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+    <div class="aside">
+        <p>Purchases</p>
+        <table>
+            <tr>
+                <td>Items:</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Sub Total</td>
+                <td>0 AUD</td>
+            </tr>
+            <tr>
+                <td colspan='2'>
+                    <button class="checkout">Checkout</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer class="bottom">
+        <p><span>&copy</span> 2022 Juan Bedoya</p>
+    </footer>
+
+    <script src="slider.js"></script>
+    <script src="selector.js"></script>
+
+</body>
+</html>
